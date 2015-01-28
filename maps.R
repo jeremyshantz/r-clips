@@ -4,6 +4,7 @@ plot(g)
 
 AndrewMap <- gvisMap(Andrew, "LatLong" , "Tip", 
                      options=list(showTip=TRUE, 
+                                  height='900',
                                   showLine=TRUE, 
                                   enableScrollWheel=TRUE,
                                   mapType='terrain', 
