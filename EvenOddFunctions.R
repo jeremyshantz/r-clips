@@ -5,3 +5,15 @@ isodd <- function(func, i) {
     i <<- abs(i)
     eval(func) == -(eval(func))
 }
+
+# Determines whether the function is even: f(-x) = f(x)
+iseven <- function(func, i) {
+    
+    i <<- -(abs(i))
+    a = eval(func) 
+    
+    i <<- abs(i)
+    b = eval(func)
+    
+    a == b
+}
